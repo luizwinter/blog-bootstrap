@@ -48,7 +48,7 @@ main article, main aside{
     z-index: 2;
 }
 
-main article a{
+.readmore{
     font-size: 15px;
     text-decoration: none;
     padding: 10px;
@@ -58,7 +58,7 @@ main article a{
     background-color: #ff80d5;
 }
 
-main article a:hover{
+.readmore:hover{
     color: white;
     background-color: rgb(218, 207, 207);
     
@@ -96,8 +96,7 @@ footer i{
 }
 
 aside img{
-    width: 110px;
-    margin-top: 5px;
+    width: 120px;
     transition: .5s;
     cursor: pointer;
 }
@@ -122,3 +121,18 @@ aside img:hover{
     font-size: 17px;
 
 }
+
+
+@media (max-width: 575.98px) { 
+
+    .col-sm-4 {
+       flex: 0 0 auto;
+       width: 33.3333333333%; }}
+   
+
+    
+@media (max-width: 388.98px) { 
+    aside img{
+    width: 100%;
+    display: block;
+}}
